@@ -209,10 +209,10 @@ timeSlider.valueProperty().addListener(sliderChangeListener);
     stage.show();
 
   }
- /*
+ 
   protected void updateValues() {
   if (playTime != null && timeSlider != null && volumeSlider != null) {
-     Platform.runLater(() -> {
+     
          Duration currentTime = mediaView.getMediaPlayer().getCurrentTime();
          timeSlider.setDisable(duration.isUnknown());
          if (!timeSlider.isDisabled()
@@ -225,13 +225,12 @@ timeSlider.valueProperty().addListener(sliderChangeListener);
              volumeSlider.setValue((int)Math.round(mediaView.getMediaPlayer().getVolume()
                      * 100));
          }
-     });
   }
 
   
             
         
-    } */
+    } 
 
   /** sets the currently playing label to the label of the new media player and updates the progress monitor. */
   private void setCurrentlyPlaying(final MediaPlayer newPlayer) {
